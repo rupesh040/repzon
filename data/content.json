@@ -1,0 +1,490 @@
+{
+  "Repzon": {
+    "templateComponents": {
+      "template-1": {
+        "shared": {
+          "Header": "RepzonHeader1",
+          "Footer": "RepzonFooter1"
+        },
+        "pages": {
+          "home": {
+            "components": [
+              {
+                "key": "Banner",
+                "component": "RepzonBanner1"
+              },
+              {
+                "key": "WhatWeOffer",
+                "component": "WhatWeOffer"
+              },
+              {
+                "key": "About",
+                "component": "RepzonAbout1"
+              },
+              {
+                "key": "Classes",
+                "component": "RepzonClasses1"
+              },
+              {
+                "key": "Trainers",
+                "component": "RepzonTrainers1"
+              },
+              {
+                "key": "Testimonials",
+                "component": "RepzonTestimonials1"
+              },
+              {
+                "key": "CompanyStatistics",
+                "component": "RepzonStats1"
+              },
+              {
+                "key": "FAQ",
+                "component": "RepzonFAQ1"
+              },
+              {
+                "key": "Contact",
+                "component": "RepzonContact1"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "sections": {
+      "Header": {
+        "variants": {
+          "RepzonHeader1": {
+            "logo": "/logo.png",
+            "brandName": "REPZON GYM & FITNESS",
+            "links": [
+              {
+                "name": "Home",
+                "href": "#home",
+                "active": true
+              },
+              {
+                "name": "About us",
+                "href": "#about"
+              },
+              {
+                "name": "Classes",
+                "href": "#classes"
+              },
+              {
+                "name": "Trainers",
+                "href": "#trainers"
+              },
+              {
+                "name": "Testimonials",
+                "href": "#testimonials"
+              },
+              {
+                "name": "Faqs",
+                "href": "#faqs"
+              },
+              {
+                "name": "Contact Us",
+                "href": "#contact"
+              }
+            ],
+            "button": "Contact Us",
+            "contact": {
+              "phone": "+1 000-000-000",
+              "email": "info@xyz.com",
+              "tagline": "GYM & FITNESS",
+              "description": "Premier gym & fitness center dedicated to strength, endurance, and transformation."
+            }
+          }
+        }
+      },
+      "Banner": {
+        "variants": {
+          "RepzonBanner1": {
+            "tagline": "Fitness for Everyone",
+            "heading": {
+              "line1": "NO MATTER YOUR",
+              "line2": "FITNESS LEVEL."
+            },
+            "backgroundImage": "/hero.webp",
+            "slides": [
+              {
+                "tagline": "Fitness for Everyone",
+                "line1": "NO MATTER YOUR",
+                "line2": "FITNESS LEVEL.",
+                "image": "/hero.webp"
+              },
+              {
+                "tagline": "Strength & Conditioning",
+                "line1": "UNLEASH YOUR",
+                "line2": "INNER BEAST.",
+                "image": "/hero-2.webp"
+              },
+              {
+                "tagline": "Functional Athleticism",
+                "line1": "PUSH BEYOND",
+                "line2": "YOUR LIMITS.",
+                "image": "/hero-3.webp"
+              }
+            ]
+          }
+        }
+      },
+      "WhatWeOffer": {
+        "variants": {
+          "RepzonOffer1": {
+            "tagline": "WHAT WE OFFER",
+            "heading": {
+              "line1": "THE BEST STANDARDS",
+              "highlight": "ANYWHERE"
+            },
+            "items": [
+              {
+                "icon": "what-1",
+                "image": "/what-1.webp",
+                "title": "Skilled Trainers",
+                "description": "Pellentesque donec in sit placerat tellus. Morbi fermentum non egestas ipsum at commodo semper."
+              },
+              {
+                "icon": "what-2",
+                "image": "/what-2.webp",
+                "title": "Quality Equipment",
+                "description": "Dui consequat ante lectus risus. Dictum ac sodales nunc etiam. Sit lectus diam a nullam egestas."
+              },
+              {
+                "icon": "what-3",
+                "image": "/what-3.webp",
+                "title": "Shower Cabins",
+                "description": "Nam lorem viverra dui feugiat. Scelerisque senectus mi bibendum lacinia. Proin orci rhoncus amet risus."
+              },
+              {
+                "icon": "what-4",
+                "image": "/what-4.webp",
+                "title": "Sport Nutrition",
+                "description": "Ultrices duis massa massa nulla non aliquet lorem. Pellentesque dapibus eget scelerisque duis diam fames eu."
+              }
+            ]
+          }
+        }
+      },
+      "About": {
+        "variants": {
+          "RepzonAbout1": {
+            "tagline": "ABOUT US",
+            "heading": {
+              "line1": "MORE THAN A GYM",
+              "line2": "A FITNESS COMMUNITY"
+            },
+            "description": "At Repzon Gym & Fitness, we’re dedicated to helping you build a stronger, healthier, and more confident life. With expert trainers, modern equipment, and a motivating environment, we make fitness accessible and effective for everyone.",
+            "mainImage": "/about.webp",
+            "secondaryImage": "/about-2.webp",
+            "features": [
+              {
+                "icon": "trainers",
+                "title": "Expert Trainers"
+              },
+              {
+                "icon": "equipment",
+                "title": "Modern Equipment"
+              },
+              {
+                "icon": "lifestyle",
+                "title": "Healthier Lifestyle"
+              }
+            ]
+          }
+        }
+      },
+      "Classes": {
+        "variants": {
+          "RepzonClasses1": {
+            "tagline": "OUR CLASSES",
+            "heading": {
+              "line1": "CLASSES DESIGNED",
+              "highlight": "FOR YOU"
+            },
+            "items": [
+              {
+                "title": "STRENGTH TRAINING",
+                "line1": "STRENGTH",
+                "line2": "TRAINING",
+                "icon": "dumbbell",
+                "image": "/STRENGTH TRAINING.webp",
+                "href": "#contact"
+              },
+              {
+                "title": "HIIT CLASSES",
+                "line1": "HIIT",
+                "line2": "CLASSES",
+                "icon": "running",
+                "image": "/HIIT CLASSES.webp",
+                "href": "#contact"
+              },
+              {
+                "title": "YOGA & WELLNESS",
+                "line1": "YOGA &",
+                "line2": "WELLNESS",
+                "icon": "lotus",
+                "image": "/YOGA & WELLNESS.webp",
+                "href": "#contact"
+              },
+              {
+                "title": "FUNCTIONAL FITNESS",
+                "line1": "FUNCTIONAL",
+                "line2": "FITNESS",
+                "icon": "kettlebell",
+                "image": "/FUNCTIONAL FITNESS.webp",
+                "href": "#contact"
+              }
+            ]
+          }
+        }
+      },
+      "Trainers": {
+        "variants": {
+          "RepzonTrainers1": {
+            "tagline": "OUR TRAINERS",
+            "heading": {
+              "line1": "MEET OUR EXPERT",
+              "highlight": "TRAINERS"
+            },
+            "items": [
+              {
+                "name": "Daniel Brooks",
+                "role": "Strength Coach",
+                "image": "/trainer-1.webp",
+                "href": "#contact",
+                "socials": [
+                  { "platform": "instagram", "href": "https://instagram.com" },
+                  { "platform": "facebook", "href": "https://facebook.com" },
+                  { "platform": "linkedin", "href": "https://linkedin.com" }
+                ]
+              },
+              {
+                "name": "Emma Carter",
+                "role": "Fitness Trainer",
+                "image": "/trainer-2.webp",
+                "href": "#contact",
+                "socials": [
+                  { "platform": "instagram", "href": "https://instagram.com" },
+                  { "platform": "facebook", "href": "https://facebook.com" },
+                  { "platform": "linkedin", "href": "https://linkedin.com" }
+                ]
+              },
+              {
+                "name": "Liam Mitchell",
+                "role": "HIIT Specialist",
+                "image": "/trainer-3.webp",
+                "href": "#contact",
+                "socials": [
+                  { "platform": "instagram", "href": "https://instagram.com" },
+                  { "platform": "facebook", "href": "https://facebook.com" },
+                  { "platform": "linkedin", "href": "https://linkedin.com" }
+                ]
+              },
+              {
+                "name": "Sophia Reed",
+                "role": "Yoga Instructor",
+                "image": "/trainer-4.webp",
+                "href": "#contact",
+                "socials": [
+                  { "platform": "instagram", "href": "https://instagram.com" },
+                  { "platform": "facebook", "href": "https://facebook.com" },
+                  { "platform": "linkedin", "href": "https://linkedin.com" }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "Testimonials": {
+        "variants": {
+          "RepzonTestimonials1": {
+            "tagline": "TESTIMONIALS",
+            "heading": {
+              "line1": "WHAT OUR MEMBERS",
+              "highlight": "SAY"
+            },
+            "backgroundImage": "/testimonial.webp",
+            "items": [
+              {
+                "quote": "I've been training at Repzon Fitness for about 6 months now, and I'm really happy with it. The facilities are great, with a wide variety of equipment and plenty of space to work out. The staff is also very friendly and helpful, and they're always happy to answer any questions I have.",
+                "name": "ALEXIS MORTON",
+                "role": "Gym Member",
+                "rating": 5,
+                "avatar": "/testimonial-avatar.webp"
+              },
+              {
+                "quote": "The strength zone at Repzon is unmatched. Competition-grade bars, calibrated plates, and an environment that demands your absolute best every single session.",
+                "name": "LIAM MITCHELL",
+                "role": "Powerlifting Athlete",
+                "rating": 5,
+                "avatar": "/trainer-3.webp"
+              },
+              {
+                "quote": "Having certified coaches who tailor workouts to your exact goals transformed my endurance and mobility. The community here pushes you forward with genuine support.",
+                "name": "EMMA CARTER",
+                "role": "Fitness Enthusiast",
+                "rating": 5,
+                "avatar": "/trainer-2.webp"
+              }
+            ]
+          }
+        }
+      },
+      "CompanyStatistics": {
+        "variants": {
+          "RepzonStats1": {
+            "tagline": {
+              "text": "WHY CHOOSE US"
+            },
+            "heading": {
+              "line1": "Your Ultimate Partner in",
+              "line2Prefix": "Strength &",
+              "line2Highlight": "Excellence"
+            },
+            "stats": [
+              {
+                "value": "10+",
+                "label": "Years Experience"
+              },
+              {
+                "value": "99%",
+                "label": "Client Satisfaction"
+              },
+              {
+                "value": "50+",
+                "label": "Certified Coaches"
+              }
+            ]
+          }
+        }
+      },
+      "FAQ": {
+        "variants": {
+          "RepzonFAQ1": {
+            "tagline": "FAQS",
+            "heading": {
+              "line1": "FREQUENTLY ASKED",
+              "highlight": "QUESTIONS"
+            },
+            "image": "/faqs.webp",
+            "items": [
+              {
+                "question": "What are your gym membership plans?",
+                "answer": "We offer flexible membership plans including monthly, quarterly, half-yearly, and annual options. Each plan gives you access to our gym, classes, and basic facilities."
+              },
+              {
+                "question": "Do you offer personal training?",
+                "answer": "Yes, we offer tailored 1-on-1 personal training sessions with certified fitness coaches who design customized workout and nutrition programs for your goals."
+              },
+              {
+                "question": "Are group fitness classes included in the membership?",
+                "answer": "Yes, all active members enjoy complimentary access to our full schedule of group classes including HIIT, Strength Training, Yoga, and Functional Conditioning."
+              },
+              {
+                "question": "What are the gym's operating hours?",
+                "answer": "Repzon operates 24/7 with keycard access for members. Staffed consultation and training hours run Monday through Saturday from 6:00 AM to 10:00 PM."
+              },
+              {
+                "question": "Is there a trial workout available?",
+                "answer": "Yes, we provide a free 3-day guest pass allowing you to experience our state-of-the-art facility, test equipment, and attend any scheduled group class."
+              }
+            ]
+          }
+        }
+      },
+      "Contact": {
+        "variants": {
+          "RepzonContact1": {
+            "tagline": "CONTACT US",
+            "heading": {
+              "line1": "GET IN",
+              "highlight": "TOUCH"
+            },
+            "description": "Have a question, need more information, or want to join our gym? We're here to help!",
+            "items": [
+              {
+                "icon": "location",
+                "title": "Our Location",
+                "detail": "27 Division St, New York, NY 10002, USA"
+              },
+              {
+                "icon": "mail",
+                "title": "Email Us",
+                "detail": "info@xyz.com"
+              },
+              {
+                "icon": "phone",
+                "title": "Call Us",
+                "detail": "+1 000-000-000"
+              }
+            ],
+            "socials": [
+              { "platform": "instagram", "href": "https://instagram.com" },
+              { "platform": "facebook", "href": "https://facebook.com" },
+              { "platform": "linkedin", "href": "https://linkedin.com" },
+              { "platform": "youtube", "href": "https://youtube.com" }
+            ],
+            "form": {
+              "namePlaceholder": "Your Name",
+              "emailPlaceholder": "Your Email",
+              "phonePlaceholder": "Phone Number",
+              "subjectPlaceholder": "Subject",
+              "messagePlaceholder": "Your Message",
+              "buttonText": "SEND MESSAGE"
+            }
+          }
+        }
+      },
+      "Footer": {
+        "variants": {
+          "RepzonFooter1": {
+            "logo": "/logo.png",
+            "brandName": "Repzon Gym & Fitness",
+            "description": "Your fitness destination for expert training, modern equipment, and a healthier, stronger you.",
+            "backgroundImage": "/fotter.webp",
+            "socials": [
+              { "platform": "instagram", "href": "https://instagram.com" },
+              { "platform": "facebook", "href": "https://facebook.com" },
+              { "platform": "linkedin", "href": "https://linkedin.com" },
+              { "platform": "youtube", "href": "https://youtube.com" }
+            ],
+            "quickLinks": {
+              "title": "Quick Links",
+              "links": [
+                { "name": "Home", "href": "#" },
+                { "name": "About Us", "href": "#about" },
+                { "name": "Our Classes", "href": "#classes" },
+                { "name": "Trainers", "href": "#trainers" },
+                { "name": "Testimonials", "href": "#testimonials" },
+                { "name": "Contact Us", "href": "#contact" }
+              ]
+            },
+            "contactInfo": {
+              "title": "Contact Info",
+              "items": [
+                {
+                  "type": "location",
+                  "text": "27 Division St, New York,\nNY 10002, USA"
+                },
+                {
+                  "type": "email",
+                  "text": "info@xyz.com"
+                },
+                {
+                  "type": "phone",
+                  "text": "+1 000-000-000"
+                }
+              ]
+            },
+            "bottomBar": {
+              "copyright": "© 2026 Repzon Gym & Fitness. All Rights Reserved.",
+              "poweredBy": "Powered by Lestow",
+              "poweredByUrl": "https://lestow.com"
+            }
+          }
+        }
+      }
+    }
+  }
+}
