@@ -30,27 +30,6 @@ export default function Footer() {
     return () => observer.disconnect();
   }, []);
 
-  const handleSmoothScroll = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    href: string
-  ) => {
-    if (href.startsWith("#")) {
-      e.preventDefault();
-      const targetId = href.replace("#", "");
-      const element = document.getElementById(targetId);
-      if (element) {
-        const navOffset = 72;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - navOffset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
-      }
-    }
-  };
-
   return (
     <footer
       ref={footerRef}
@@ -75,8 +54,7 @@ export default function Footer() {
           <div className="lg:col-span-4 flex flex-col items-start">
             <Link
               href="#home"
-              onClick={(e) => handleSmoothScroll(e, "#home")}
-              className="inline-block relative w-48 sm:w-56 h-14 mb-4"
+              className="inline-block relative w-60 sm:w-72 md:w-80 h-16 sm:h-20 mb-5"
             >
               <Image
                 src={footerData.logo}
@@ -143,7 +121,6 @@ export default function Footer() {
                 <li key={idx}>
                   <Link
                     href={link.href}
-                    onClick={(e) => handleSmoothScroll(e, link.href)}
                     className="group inline-flex items-center text-sm font-medium text-neutral-300 hover:text-[#E99B12] transition-colors duration-200"
                   >
                     <span className="text-[#E99B12] font-black text-sm mr-2.5 transition-transform duration-200 group-hover:translate-x-1">

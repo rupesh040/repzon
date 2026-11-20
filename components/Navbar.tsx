@@ -77,7 +77,7 @@ export default function Navbar({ data }: NavbarProps) {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-[72px]">
+        <div className="flex items-center justify-between h-[82px] sm:h-[88px]">
           <div className="flex items-center">
             <Link
               href="#home"
@@ -87,15 +87,15 @@ export default function Navbar({ data }: NavbarProps) {
               <Image
                 src={headerData.logo}
                 alt={headerData.brandName || "Repzon Gym & Fitness Logo"}
-                width={190}
-                height={56}
+                width={260}
+                height={78}
                 priority
-                className="h-11 sm:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
+                className="h-14 sm:h-16 lg:h-[68px] w-auto object-contain transition-transform duration-200 group-hover:scale-[1.03]"
               />
             </Link>
 
             <div
-              className="hidden md:block h-8 w-[1.5px] bg-neutral-700/60 ml-5 lg:ml-7 mr-2"
+              className="hidden md:block h-10 w-[1.5px] bg-neutral-700/60 ml-5 lg:ml-7 mr-2"
               aria-hidden="true"
             />
           </div>
