@@ -38,11 +38,11 @@ export default function WhatWeOffer({ data }: WhatWeOfferProps) {
   return (
     <section
       ref={sectionRef}
-      className="w-full bg-white text-black py-14 sm:py-16 lg:py-[82px] px-4 sm:px-6 lg:px-8 overflow-hidden border-b border-neutral-100"
+      className="w-full bg-white text-black py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden border-b border-neutral-100"
     >
       <div className="max-w-[1320px] mx-auto">
         <div
-          className={`flex items-center justify-center gap-3 sm:gap-6 mb-3 transition-all duration-700 ${
+          className={`flex items-center justify-center gap-3 sm:gap-6 mb-2.5 sm:mb-3 transition-all duration-700 ${
             isInView
               ? "opacity-100 translate-y-0"
               : "opacity-0 -translate-y-4"
@@ -58,17 +58,17 @@ export default function WhatWeOffer({ data }: WhatWeOfferProps) {
         </div>
 
         <h2
-          className={`text-center text-[27px] leading-[1.15] sm:text-[40px] md:text-[48px] lg:text-[62px] font-black italic uppercase tracking-[-0.035em] mb-9 sm:mb-12 lg:mb-[38px] transition-all duration-700 delay-100 ${
+          className={`text-center text-[clamp(1.08rem,4.45vw,2rem)] leading-[1.15] sm:text-[38px] md:text-[46px] lg:text-[58px] font-black italic uppercase tracking-[-0.035em] mb-6 sm:mb-10 lg:mb-12 transition-all duration-700 delay-100 ${
             isInView
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-5"
           }`}
         >
-          <span className="text-[#171717] mr-1 sm:mr-2">
+          <span className="text-[#171717] mr-1.5 sm:mr-2">
             {offerData.heading.line1}
           </span>
 
-          <span className="text-[#E99B12]">
+          <span className="text-[#E99B12] whitespace-nowrap">
             {offerData.heading.highlight}
           </span>
         </h2>
@@ -78,7 +78,7 @@ export default function WhatWeOffer({ data }: WhatWeOfferProps) {
             <div
               key={item.title}
               style={{ transitionDelay: `${180 + index * 130}ms` }}
-              className={`relative flex flex-col items-center text-center px-5 sm:px-5 lg:px-6 pt-5 pb-9 sm:py-7 lg:py-0 transition-all duration-700 ease-out ${
+              className={`relative flex flex-col items-center text-center px-5 sm:px-5 lg:px-6 pt-4 pb-6 sm:py-6 lg:py-0 transition-all duration-700 ease-out ${
                 isInView
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-8"

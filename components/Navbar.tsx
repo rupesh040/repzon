@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import contentData from "@/data/content.json";
 import type { HeaderVariant } from "@/data/type";
 
@@ -79,7 +78,7 @@ export default function Navbar({ data }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-[82px] sm:h-[88px]">
           <div className="flex items-center">
-            <Link
+            <a
               href="#home"
               className="flex items-center shrink-0 group focus:outline-none"
               aria-label={headerData.brandName || "Repzon Gym & Fitness"}
@@ -92,7 +91,7 @@ export default function Navbar({ data }: NavbarProps) {
                 priority
                 className="h-14 sm:h-16 lg:h-[68px] w-auto object-contain transition-transform duration-200 group-hover:scale-[1.03]"
               />
-            </Link>
+            </a>
 
             <div
               className="hidden md:block h-10 w-[1.5px] bg-neutral-700/60 ml-5 lg:ml-7 mr-2"
@@ -108,7 +107,7 @@ export default function Navbar({ data }: NavbarProps) {
               const isActive =
                 activeItem.toLowerCase() === link.name.toLowerCase();
               return (
-                <Link
+                <a
                   key={link.name}
                   href={link.href}
                   className={`relative text-[15px] lg:text-[16px] font-semibold tracking-wide transition-colors duration-200 py-1.5 focus:outline-none ${
@@ -125,7 +124,7 @@ export default function Navbar({ data }: NavbarProps) {
                       aria-hidden="true"
                     />
                   )}
-                </Link>
+                </a>
               );
             })}
           </nav>
@@ -181,7 +180,7 @@ export default function Navbar({ data }: NavbarProps) {
             const isActive =
               activeItem.toLowerCase() === link.name.toLowerCase();
             return (
-              <Link
+              <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
@@ -192,7 +191,7 @@ export default function Navbar({ data }: NavbarProps) {
                 }`}
               >
                 {link.name}
-              </Link>
+              </a>
             );
           })}
         </div>

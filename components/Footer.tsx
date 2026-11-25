@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import contentData from "@/data/content.json";
 import { ContentData } from "@/data/type";
 
@@ -33,7 +32,7 @@ export default function Footer() {
   return (
     <footer
       ref={footerRef}
-      className="relative bg-[#0c0d0e] text-white pt-20 pb-10 px-4 sm:px-6 lg:px-8 overflow-hidden"
+      className="relative bg-[#0c0d0e] text-white pt-10 pb-8 sm:pt-14 sm:pb-10 lg:pt-16 lg:pb-10 px-4 sm:px-6 lg:px-8 overflow-hidden"
     >
       <div className="absolute inset-0 z-0">
         <Image
@@ -52,7 +51,7 @@ export default function Footer() {
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 items-start">
           <div className="lg:col-span-4 flex flex-col items-start">
-            <Link
+            <a
               href="#home"
               className="inline-block relative w-60 sm:w-72 md:w-80 h-16 sm:h-20 mb-5"
             >
@@ -63,7 +62,7 @@ export default function Footer() {
                 className="object-contain object-left"
                 priority={false}
               />
-            </Link>
+            </a>
 
             <p className="text-neutral-400 text-sm leading-relaxed max-w-sm mb-6 font-medium">
               {footerData.description}
@@ -119,7 +118,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {footerData.quickLinks.links.map((link, idx) => (
                 <li key={idx}>
-                  <Link
+                  <a
                     href={link.href}
                     className="group inline-flex items-center text-sm font-medium text-neutral-300 hover:text-[#E99B12] transition-colors duration-200"
                   >
@@ -127,7 +126,7 @@ export default function Footer() {
                       &gt;
                     </span>
                     <span>{link.name}</span>
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -145,14 +144,22 @@ export default function Footer() {
 
             <ul className="space-y-5">
               {footerData.contactInfo.items.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-4">
+                <li key={idx} className="group flex items-start gap-4">
                   {item.type === "location" && (
-                    <svg
-                      className="w-5 h-5 text-[#E99B12] shrink-0 mt-0.5 fill-current"
-                      viewBox="0 0 24 24"
+                    <a
+                      href={`https://maps.google.com/?q=${encodeURIComponent(item.text.replace(/\s+/g, " "))}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:scale-110 transition-transform"
+                      aria-label="View location on map"
                     >
-                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                    </svg>
+                      <svg
+                        className="w-5 h-5 text-[#E99B12] shrink-0 mt-0.5 fill-current"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                      </svg>
+                    </a>
                   )}
                   {item.type === "email" && (
                     <a
@@ -198,7 +205,14 @@ export default function Footer() {
                         {item.text}
                       </a>
                     ) : (
-                      item.text
+                      <a
+                        href={`https://maps.google.com/?q=${encodeURIComponent(item.text.replace(/\s+/g, " "))}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-[#E99B12] transition-colors"
+                      >
+                        {item.text}
+                      </a>
                     )}
                   </div>
                 </li>
@@ -207,7 +221,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="w-full h-[2.5px] bg-[#E99B12] mt-12 sm:mt-16 mb-6"></div>
+        <div className="w-full h-[2.5px] bg-[#E99B12] mt-8 sm:mt-12 lg:mt-14 mb-5 sm:mb-6"></div>
 
         <div className="w-full">
           <p className="text-xs sm:text-sm font-medium text-neutral-400 text-center sm:text-left">

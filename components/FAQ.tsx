@@ -55,11 +55,11 @@ export default function FAQ({ data }: FAQProps) {
     <section
       ref={sectionRef}
       id="faqs"
-      className="w-full bg-white text-black py-20 lg:py-28 px-4 sm:px-6 lg:px-8 border-b border-neutral-100 overflow-hidden scroll-mt-20"
+      className="w-full bg-white text-black py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 border-b border-neutral-100 overflow-hidden scroll-mt-[84px]"
     >
       <div className="max-w-7xl mx-auto">
         <div
-          className={`flex items-center justify-center space-x-3 mb-2.5 transition-all duration-700 ease-out ${
+          className={`flex items-center justify-center space-x-3 mb-2 transition-all duration-700 ease-out ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
           }`}
         >
@@ -71,41 +71,43 @@ export default function FAQ({ data }: FAQProps) {
         </div>
 
         <h2
-          className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black italic tracking-tight uppercase text-center mb-14 sm:mb-16 transition-all duration-700 ease-out delay-150 ${
+          className={`text-[clamp(1.12rem,4.7vw,2rem)] sm:text-4xl md:text-5xl lg:text-6xl font-black italic tracking-tight uppercase text-center mb-6 sm:mb-10 lg:mb-12 transition-all duration-700 ease-out delay-150 ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <span className="text-black mr-3">{faqData.heading.line1}</span>
-          <span className="text-[#EAB308]">{faqData.heading.highlight}</span>
+          <span className="text-black mr-2 sm:mr-3">{faqData.heading.line1}</span>
+          <span className="text-[#EAB308] whitespace-nowrap">{faqData.heading.highlight}</span>
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 lg:gap-14 items-center">
           <div
-            className={`lg:col-span-5 relative w-full max-w-md mx-auto lg:max-w-none transition-all duration-700 ease-out transform ${
+            className={`lg:col-span-5 relative w-full max-w-[360px] sm:max-w-md lg:max-w-none mx-auto p-3.5 sm:p-5 transition-all duration-700 ease-out transform ${
               visible
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 -translate-x-10"
             }`}
           >
-            <div
-              className="absolute -top-3.5 -left-3.5 sm:-top-5 sm:-left-5 w-24 h-24 sm:w-32 sm:h-32 border-t-[12px] border-l-[12px] border-[#EAB308] z-0 pointer-events-none"
-              aria-hidden="true"
-            />
+            <div className="relative w-full">
+              <div
+                className="absolute -top-3.5 -left-3.5 sm:-top-5 sm:-left-5 w-20 h-20 sm:w-28 sm:h-28 border-t-[10px] border-l-[10px] sm:border-t-[12px] sm:border-l-[12px] border-[#EAB308] z-0 pointer-events-none"
+                aria-hidden="true"
+              />
 
-            <div className="relative z-10 w-full aspect-[4/5] sm:h-[480px] lg:h-[500px] overflow-hidden shadow-2xl bg-neutral-900 group">
-              <Image
-                src={faqData.image}
-                alt="Repzon Member FAQ"
-                fill
-                sizes="(max-width: 1024px) 100vw, 45vw"
-                className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+              <div className="relative z-10 w-full aspect-square lg:aspect-[4/5] lg:h-[480px] overflow-hidden shadow-2xl bg-neutral-900 group">
+                <Image
+                  src={faqData.image}
+                  alt="Repzon Member FAQ"
+                  fill
+                  sizes="(max-width: 1024px) 90vw, 42vw"
+                  className="object-cover object-top sm:object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+              </div>
+
+              <div
+                className="absolute -bottom-3.5 -right-3.5 sm:-bottom-5 sm:-right-5 w-20 h-20 sm:w-24 sm:h-24 border-b-[10px] border-r-[10px] sm:border-b-[12px] sm:border-r-[12px] border-[#EAB308] z-0 pointer-events-none"
+                aria-hidden="true"
               />
             </div>
-
-            <div
-              className="absolute -bottom-4 -right-4 sm:-bottom-5 sm:-right-5 w-20 h-20 sm:w-24 sm:h-24 border-b-[12px] border-r-[12px] border-[#EAB308] z-0 pointer-events-none"
-              aria-hidden="true"
-            />
           </div>
 
           <div className="lg:col-span-7 flex flex-col space-y-3.5">

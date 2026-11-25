@@ -301,7 +301,7 @@ export interface RepzonData {
     Footer: FooterSection;
     [sectionKey: string]: {
       variants: {
-        [variantKey: string]: any;
+        [variantKey: string]: unknown;
       };
     };
   };

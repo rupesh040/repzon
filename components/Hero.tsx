@@ -49,7 +49,7 @@ export default function Hero({ data }: HeroProps) {
   return (
     <section
       id="home"
-      className="relative isolate w-full aspect-[16/9] sm:aspect-auto sm:h-[82svh] sm:min-h-[620px] sm:max-h-[880px] overflow-hidden bg-[#080808] text-white select-none scroll-mt-20"
+      className="relative isolate w-full aspect-[16/9] sm:aspect-auto sm:h-[82svh] sm:min-h-[620px] sm:max-h-[880px] overflow-hidden bg-[#080808] text-white select-none scroll-mt-[84px]"
     >
       <div className="absolute inset-0 z-0 overflow-hidden">
         {slides.map((slide, index) => (
@@ -166,7 +166,7 @@ export default function Hero({ data }: HeroProps) {
       </div>
 
       <div
-        className={`absolute bottom-5 right-5 sm:bottom-8 sm:right-10 z-30 flex items-center gap-2.5 sm:gap-3 transition-all duration-700 ${
+        className={`absolute bottom-3 right-3 sm:bottom-8 sm:right-10 z-30 flex items-center gap-2 sm:gap-3 transition-all duration-700 ${
           isLoaded
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-8"
@@ -176,10 +176,10 @@ export default function Hero({ data }: HeroProps) {
           type="button"
           onClick={handlePrev}
           aria-label="Previous slide"
-          className="w-10 h-10 sm:w-12 sm:h-12 bg-white text-black hover:bg-[#EAB308] hover:text-black flex items-center justify-center shadow-xl transition-all duration-200 cursor-pointer active:scale-95"
+          className="w-8 h-8 sm:w-12 sm:h-12 bg-white text-black hover:bg-[#EAB308] hover:text-black flex items-center justify-center shadow-xl transition-all duration-200 cursor-pointer active:scale-95"
         >
           <svg
-            className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.5]"
+            className="w-4 h-4 sm:w-6 sm:h-6 stroke-[2.5]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -196,10 +196,10 @@ export default function Hero({ data }: HeroProps) {
           type="button"
           onClick={handleNext}
           aria-label="Next slide"
-          className="w-10 h-10 sm:w-12 sm:h-12 bg-white text-black hover:bg-[#EAB308] hover:text-black flex items-center justify-center shadow-xl transition-all duration-200 cursor-pointer active:scale-95"
+          className="w-8 h-8 sm:w-12 sm:h-12 bg-white text-black hover:bg-[#EAB308] hover:text-black flex items-center justify-center shadow-xl transition-all duration-200 cursor-pointer active:scale-95"
         >
           <svg
-            className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.5]"
+            className="w-4 h-4 sm:w-6 sm:h-6 stroke-[2.5]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

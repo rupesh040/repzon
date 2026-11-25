@@ -92,11 +92,11 @@ export default function Trainers({ data }: TrainersProps) {
     <section
       ref={sectionRef}
       id="trainers"
-      className="w-full bg-white text-black py-20 lg:py-28 px-4 sm:px-6 lg:px-8 border-b border-neutral-100 overflow-hidden scroll-mt-20"
+      className="w-full bg-white text-black py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 border-b border-neutral-100 overflow-hidden scroll-mt-[84px]"
     >
       <div className="max-w-7xl mx-auto">
         <div
-          className={`flex items-center justify-center space-x-3 mb-2.5 transition-all duration-700 ease-out ${
+          className={`flex items-center justify-center space-x-3 mb-2 transition-all duration-700 ease-out ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
           }`}
         >
@@ -108,12 +108,12 @@ export default function Trainers({ data }: TrainersProps) {
         </div>
 
         <h2
-          className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black italic tracking-tight uppercase text-center mb-14 sm:mb-16 transition-all duration-700 ease-out delay-150 ${
+          className={`text-[clamp(1.18rem,4.9vw,2rem)] sm:text-4xl md:text-5xl lg:text-6xl font-black italic tracking-tight uppercase text-center mb-6 sm:mb-10 lg:mb-12 transition-all duration-700 ease-out delay-150 ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <span className="text-black mr-3">{trainersData.heading.line1}</span>
-          <span className="text-[#EAB308]">{trainersData.heading.highlight}</span>
+          <span className="text-black mr-2 sm:mr-3">{trainersData.heading.line1}</span>
+          <span className="text-[#EAB308] whitespace-nowrap">{trainersData.heading.highlight}</span>
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7">
